@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "885667149994",
+    "firebase_url": "https://timein-864e3.firebaseio.com",
+    "project_id": "timein-864e3",
+    "storage_bucket": "timein-864e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885667149994:android:6e31bb81e0fef570",
+        "android_client_info": {
+          "package_name": "com.example.angel.timein"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885667149994-u8pvsje8v5id12o6aape4d6d2231b5oo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvUon3yR3ZdBmHtaD32DCQgiT4_AcV7Mo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
