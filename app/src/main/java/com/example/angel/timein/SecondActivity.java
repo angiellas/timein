@@ -14,7 +14,9 @@ public class SecondActivity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
     private Button logout;
-
+    private Button myTimesheets;
+    private Button myAvailability;
+    private Button requestHol;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +26,35 @@ public class SecondActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
 
         logout = (Button) findViewById(R.id.btnLogout);
+        myTimesheets = (Button) findViewById(R.id.btnMyTimesheets);
+        myAvailability = (Button) findViewById(R.id.btnMyAvailability);
+        requestHol = (Button) findViewById(R.id.btnRqst);
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Logout();
+            }
+        });
+
+        myTimesheets.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SecondActivity.this, TimesheetActivity.class));
+            }
+        });
+
+        myAvailability.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //startActivity(new Intent(SecondActivity.this, AvailabilityActivity.class));
+            }
+        });
+
+        requestHol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //startActivity(new Intent(SecondActivity.this, RequestActivity.class));
             }
         });
     }
@@ -93,7 +119,13 @@ public class SecondActivity extends AppCompatActivity {
                 case R.id.logoutMenu:{
                     Logout();
                 }
+                case R.id.changePassword:{
+
+                }
             }
         return super.onOptionsItemSelected(item);
     }
+
+
+
 }

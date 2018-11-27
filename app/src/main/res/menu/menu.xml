@@ -8,15 +8,9 @@
         android:title="Logout">
     </item>
     <item
-        android:id="@+id/settingsMenu"
+        android:id="@+id/changePassword"
         android:orderInCategory="200"
         app:showAsAction="never"
-        android:title="Settings">
-    </item>
-    <item
-        android:id="@+id/refreshMenu"
-        android:orderInCategory="100"
-        app:showAsAction="never"
-        android:title="Refresh">
+        android:title="Change Password">
     </item>
 </menu>

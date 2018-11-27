@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TimeIn</string>
+    <string name="title_activity_availability">AvailabilityActivity</string>
 </resources>

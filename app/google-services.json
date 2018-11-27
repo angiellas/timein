@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "885667149994-sg2reguj85gfgsrv8d45j4n25844u1k5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.angel.timein",
+            "certificate_hash": "58879aeb4802609c8dd977878253eec5402292bb"
+          }
+        },
+        {
           "client_id": "885667149994-u8pvsje8v5id12o6aape4d6d2231b5oo.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885667149994-u8pvsje8v5id12o6aape4d6d2231b5oo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
