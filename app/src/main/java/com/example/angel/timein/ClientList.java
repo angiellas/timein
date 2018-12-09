@@ -1,3 +1,12 @@
+//
+/*
+08/12/2018
+Author AngieSR
+
+NOTE: This class was based on these tutorials: https://www.simplifiedcoding.net/firebase-realtime-database-crud/
+*/
+//
+
 package com.example.angel.timein;
 
 import android.app.Activity;

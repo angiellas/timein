@@ -1,3 +1,10 @@
+/*
+08/12/2018
+Author AngieSR
+
+NOTE: This class was based on these tutorials: https://www.youtube.com/playlist?list=PLbte_tgDKVWQOCRIzkgEQ8umdn_S6ZnHr
+*/
+
 package com.example.angel.timein;
 
 import android.content.Intent;
@@ -46,9 +53,8 @@ public class RegistrationActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 sendEmailVerification();
-                                //Toast.makeText(RegistrationActivity.this, "Registration Successful", Toast.LENGTH_LONG).show();
-                                //startActivity(new Intent (RegistrationActivity.this, MainActivity.class));
-                            } else{
+                            }
+                            else{
                                 Toast.makeText(RegistrationActivity.this, "Registration Failed", Toast.LENGTH_LONG).show();
                             }
                         }

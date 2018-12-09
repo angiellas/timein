@@ -1,3 +1,10 @@
+/*
+08/12/2018
+Author AngieSR
+
+NOTE: This class was based on these tutorials: https://www.youtube.com/playlist?list=PLbte_tgDKVWQOCRIzkgEQ8umdn_S6ZnHr
+*/
+
 package com.example.angel.timein;
 
 import android.app.ProgressDialog;
@@ -78,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void validation (String userName, String userPassword) {
-        progressDialog.setMessage("Email us: time.in@outlook.com");
+        progressDialog.setMessage("Welcome back!");
         progressDialog.show();
 
         firebaseAuth.signInWithEmailAndPassword(userName, userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -86,12 +93,11 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     progressDialog.dismiss();
-                    //Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_LONG).show();
-                    //startActivity(new Intent(MainActivity.this, SecondActivity.class));
                     checkEmailVerification();
                 }else{
-                    Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Login Failed. Email or password incorrect.", Toast.LENGTH_LONG).show();
                         counter--;
+                        Info.setText ("Attempts remaining: 5");
                         Info.setText("Attempts Remaining: " + String.valueOf(counter));
                         progressDialog.dismiss();
                         if(counter == 0){
@@ -105,9 +111,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void checkEmailVerification(){
         FirebaseUser firebaseUser = firebaseAuth.getInstance().getCurrentUser();
-        Boolean emailflag = firebaseUser.isEmailVerified();
+        Boolean emailFlag = firebaseUser.isEmailVerified();
 
-        if(emailflag){
+        if(emailFlag){
             finish();
             startActivity(new Intent(MainActivity.this, SecondActivity.class));
         }

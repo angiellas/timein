@@ -7,10 +7,4 @@
         app:showAsAction="never"
         android:title="Logout">
     </item>
-    <item
-        android:id="@+id/changePassword"
-        android:orderInCategory="200"
-        app:showAsAction="never"
-        android:title="Change Password">
-    </item>
 </menu>

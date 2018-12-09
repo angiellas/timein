@@ -1,3 +1,10 @@
+/*
+08/12/2018
+Author AngieSR
+
+NOTE: This class was based on these tutorials: https://www.youtube.com/playlist?list=PLbte_tgDKVWQOCRIzkgEQ8umdn_S6ZnHr
+*/
+
 package com.example.angel.timein;
 
 import android.content.Intent;

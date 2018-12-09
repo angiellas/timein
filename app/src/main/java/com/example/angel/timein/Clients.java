@@ -4,14 +4,16 @@ public class Clients {
 
     String clientId;
     String clientName;
+    String userId;
 
     public Clients(){
 
     }
 
-    public Clients(String clientId, String clientName) {
+    public Clients(String clientId, String clientName, String userId) {
         this.clientId = clientId;
         this.clientName = clientName;
+        this.userId = userId;
     }
 
     public String getClientId() {
@@ -29,4 +31,13 @@ public class Clients {
     public void setClientName(String clientName) {
         this.clientName = clientName;
     }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
 }
+
